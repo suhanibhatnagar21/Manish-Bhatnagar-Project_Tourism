@@ -1,7 +1,44 @@
 # Tourism Package Prediction - MLOps Pipeline
 
 ## Project Overview
-End-to-end MLOps pipeline predicting whether a customer will purchase the **Wellness Tourism Package** for Visit with Us travel company.
+
+### Business Context
+Visit with Us, a leading travel company, is revolutionizing the tourism industry by leveraging data-driven strategies to optimize operations and customer engagement. While introducing a new package offering, such as the Wellness Tourism Package, the company faces challenges in targeting the right customers efficiently. The manual approach to identifying potential customers is inconsistent, time-consuming, and prone to errors, leading to missed opportunities and suboptimal campaign performance.
+
+To address these issues, the company aims to implement a scalable and automated system that integrates customer data, predicts potential buyers, and enhances decision-making for marketing strategies. By utilizing an MLOps pipeline, the company seeks to achieve seamless integration of data preprocessing, model development, deployment, and CI/CD practices for continuous improvement. This system will ensure efficient targeting of customers, timely updates to the predictive model, and adaptation to evolving customer behaviors, ultimately driving growth and customer satisfaction.
+
+### Objective
+As an MLOps Engineer at Visit with Us, the responsibility is to design and deploy an MLOps pipeline on GitHub to automate the end-to-end workflow for predicting customer purchases. The primary objective is to build a model that predicts whether a customer will purchase the newly introduced Wellness Tourism Package before contacting them. The pipeline includes data cleaning, preprocessing, transformation, model building, training, evaluation, and deployment, ensuring consistent performance and scalability. By leveraging GitHub Actions for CI/CD integration, the system enables automated updates, streamlines model deployment, and improves operational efficiency.
+
+### Data Dictionary
+
+#### Customer Details
+| Feature | Description |
+|---------|-------------|
+| CustomerID | Unique identifier for each customer |
+| ProdTaken | Target variable - purchased a package (0: No, 1: Yes) |
+| Age | Age of the customer |
+| TypeofContact | Method of contact (Company Invited or Self Inquiry) |
+| CityTier | City category based on development and living standards (Tier 1 > Tier 2 > Tier 3) |
+| Occupation | Customer occupation (Salaried, Freelancer, etc.) |
+| Gender | Gender of the customer (Male, Female) |
+| NumberOfPersonVisiting | Total people accompanying the customer |
+| PreferredPropertyStar | Preferred hotel rating |
+| MaritalStatus | Marital status (Single, Married, Divorced) |
+| NumberOfTrips | Average annual trips taken |
+| Passport | Valid passport holder (0: No, 1: Yes) |
+| OwnCar | Car owner (0: No, 1: Yes) |
+| NumberOfChildrenVisiting | Children below age 5 accompanying |
+| Designation | Customer designation in their organization |
+| MonthlyIncome | Gross monthly income |
+
+#### Customer Interaction Data
+| Feature | Description |
+|---------|-------------|
+| PitchSatisfactionScore | Customer satisfaction with the sales pitch |
+| ProductPitched | Type of product pitched to the customer |
+| NumberOfFollowups | Total follow-ups by salesperson after pitch |
+| DurationOfPitch | Duration of the sales pitch |
 
 ## Live Demo
 Streamlit App: https://huggingface.co/spaces/Suhani2128/wellness-tourism-prediction
